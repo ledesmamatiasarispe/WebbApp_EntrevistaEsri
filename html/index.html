@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Matias Arispe mapa</title>
+
+    <!--mapa leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""
+    />
+
+    <!--jquery-->
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <script src="../jquery/jquery-3.6.0.min.js"></script>
+    <script src="../jquery/jquery-ui.min.js"></script>
+
+    <!-- stylesheet-->
+    <link rel="stylesheet" href="../css/index.css">
+
+    <script>
+        $( function() {
+          $( "#form1" ).draggable();
+        } );
+        </script>
+</head>
+
+<body>
+    
+
+    <div id="map">
+
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+
+        <script src="../js/mapa.js"> </script>
+
+    </div>
+    
+
+
+    <div id="form1" class="formularioDeIngresos"  >
+        </form>
+        <div>
+            <label for="nombre" class="lbl_formDeIngresos" placeholder="Aeroterra S.A">nombre</label>
+            <input type="text" id="nombre" class="inp_formDeIngresos">
+        </div>
+        <div>
+
+            <label for="dirección" class="lbl_formDeIngresos">dirección</label>
+            <input type="text" id="dirección" class="inp_formDeIngresos">
+
+        </div>
+        <div>
+
+            <label for="telefono" class="lbl_formDeIngresos">telefono</label>
+            <input type="text" id="text" class="inp_formDeIngresos">
+
+        </div>
+        <div>
+
+            <label for="select_categoria" class="lbl_formDeIngresos">categoria</label>
+            <select name="select_categoria" id="select_categoria" class="inp_formDeIngresos">
+                <option value="Comercial">seleccione categoria</option>
+                <option value="Comercial">Comercial</option>
+                <option value="Recidencial">Recidencial</option>
+                <option value="Mixta">Mixta</option>
+            </select>
+
+        </div>
+        <div>
+
+            <label for="coord" class="lbl_formDeIngresos">coord.</label>
+            <input type="text" id="coord" class="inp_formDeIngresosCoordenadas">
+            <button id="selectCoordsButton"></button>
+
+        </div>
+
+        </form>
+
+    </div>
+
+ 
+
+
+
+
+</body>
+
+</html>

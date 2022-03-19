@@ -1,0 +1,58 @@
+.formularioDeIngresos {
+    width: 30vw;
+    height: 40vh;
+    background-color: rgb(187, 179, 179);
+    border-radius: 10px;
+    border: 1px outset black;
+    display:grid;
+    justify-content:center;
+    z-index: auto;
+}
+
+.lbl_formDeIngresos {
+    padding: 12px;
+    position: absolute;
+    left: 10px;
+}
+
+.inp_formDeIngresos {
+    width: 15vw;
+    height: 4vh;
+    border-radius: 5px;
+   
+    border: 1px solid rgb(14, 143, 248);
+    position: relative;
+    top: 10px;
+    
+
+}
+.inp_formDeIngresosCoordenadas {
+    width: 11vw;
+    height: 4vh;
+    
+    border: 1px solid rgb(14, 143, 248);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+
+}
+
+#selectCoordsButton{
+    width: 4vw;
+    height: 29px;
+    position: relative;
+    left: -5px;
+    border: 1px solid rgb(14, 143, 248);
+    top: 8px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+#map {
+
+    width: 95vw;
+    height: 80vh;
+    z-index: 0;
+}
+
+;
