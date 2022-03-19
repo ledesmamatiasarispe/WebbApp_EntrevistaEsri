@@ -1,4 +1,16 @@
+
+
+.indexHeader
+{
+    height: 5vh;
+    background-color: rgba(155, 155, 155, 0.863);
+    display:grid;
+    justify-content:left;
+}
+
 .formularioDeIngresos {
+    position: absolute;
+    top: 0px;
     width: 30vw;
     height: 40vh;
     background-color: rgb(187, 179, 179);
@@ -8,6 +20,7 @@
     justify-content:center;
     z-index: auto;
 }
+
 
 .lbl_formDeIngresos {
     padding: 12px;
@@ -26,33 +39,62 @@
     
 
 }
+
+
 .inp_formDeIngresosCoordenadas {
     width: 11vw;
     height: 4vh;
-    
+    position: relative;
+    top: 6px;
     border: 1px solid rgb(14, 143, 248);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+
     
 
 }
 
-#selectCoordsButton{
+#btn_selectCoords{
     width: 4vw;
     height: 29px;
     position: relative;
-    left: -5px;
-    border: 1px solid rgb(14, 143, 248);
     top: 8px;
+    right: 5px;
+    border: 1px solid rgb(14, 143, 248);
+    
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 
 }
+#img_btn_selectCoords
+{
+    height: 15px;
+    
+
+}
+
+#container_btn_agregar
+{
+    position: relative;
+    top: 5px;
+    display:grid;
+    justify-content:right;
+}
+
+#btn_agregar
+{
+    height: 3vh;
+    width: 8vw;
+    border: 1px solid rgb(10, 65, 24);
+    background-color: rgb(9, 197, 9);
+    border-radius: 5px;
+
+
+}
 #map {
 
-    width: 95vw;
-    height: 80vh;
+    width: 99vw;
+    height: 90vh;
     z-index: 0;
 }
 
-;

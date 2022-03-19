@@ -5,6 +5,7 @@
     <meta charset="utf-8">
 
     <title>Matias Arispe mapa</title>
+    
 
     <!--mapa leaflet-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -19,45 +20,49 @@
 
     <!-- stylesheet-->
     <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/formIngresos.js"></script>
 
-    <script>
-        $( function() {
-          $( "#form1" ).draggable();
-        } );
-        </script>
 </head>
 
-<body>
+<body  >
     
+    <head>
+
+        <div class="indexHeader">
+            <button id="openForm1" onclick="showFormIngresos()" > form para ingreso de datos</button>
+        </div>
+       
+    </head>
 
     <div id="map">
 
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
             integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-            crossorigin=""></script>
+            crossorigin="">
+        </script>
 
         <script src="../js/mapa.js"> </script>
 
     </div>
-    
 
 
     <div id="form1" class="formularioDeIngresos"  >
         </form>
+       
         <div>
             <label for="nombre" class="lbl_formDeIngresos" placeholder="Aeroterra S.A">nombre</label>
-            <input type="text" id="nombre" class="inp_formDeIngresos">
+            <input type="text" placeholder=" ej: Aeroterra S.A" id="nombre" class="inp_formDeIngresos">
         </div>
         <div>
 
             <label for="dirección" class="lbl_formDeIngresos">dirección</label>
-            <input type="text" id="dirección" class="inp_formDeIngresos">
+            <input type="text" placeholder=" ej: Av. Eduardo Madero 1020, C1001 CABA" id="dirección" class="inp_formDeIngresos">
 
         </div>
         <div>
 
-            <label for="telefono" class="lbl_formDeIngresos">telefono</label>
-            <input type="text" id="text" class="inp_formDeIngresos">
+            <label for="telefono" class="lbl_formDeIngresos" >telefono</label>
+            <input type="text" placeholder="ej: 54 9 11 5272 0900)" id="text" class="inp_formDeIngresos">
 
         </div>
         <div>
@@ -71,18 +76,31 @@
             </select>
 
         </div>
-        <div>
+        <div >
 
             <label for="coord" class="lbl_formDeIngresos">coord.</label>
-            <input type="text" id="coord" class="inp_formDeIngresosCoordenadas">
-            <button id="selectCoordsButton"></button>
+            <input type="text" placeholder="(ej: -34.595986,-58.3724715)" id="inp_coord" class="inp_formDeIngresosCoordenadas">
+            <button id="btn_selectCoords"  ><img id="img_btn_selectCoords" alt="icono de el boton de btn_selectCoords" src="../img/map.ico.png">  </button>
+            
+        </div>
+        <div id="container_btn_agregar">
 
+            <button id="btn_agregar">agregar</button>
+            
         </div>
 
         </form>
 
     </div>
+    <div>
 
+        <ul>
+
+
+
+        </ul>
+
+    </div>
  
 
 

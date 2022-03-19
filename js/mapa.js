@@ -14,10 +14,10 @@
     }).addTo(map);
 
 
+    
 
-
-    /*
     var popup = L.popup();
+
 
     function onMapClick(e)
     {
@@ -27,5 +27,11 @@
     .openOn(map);
     }
 
-    map.on('click', onMapClick);
-    */
+    
+   
+    marker = L.marker([50.5, 30.5]).addTo(map);
+    marker.bindPopup(popup).openPopup();
+    
+    
+
+   
